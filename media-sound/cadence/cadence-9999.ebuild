@@ -12,11 +12,15 @@ EGIT_REPO_URI="https://github.com/falkTX/Cadence.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
+IUSE="launcher"
 RDEPEND="dev-python/PyQt4"
 DEPEND="${RDEPEND}"
 
 src_prepare() {
     epatch "${FILESDIR}/${P}-destdir.patch"
+	if use launcher ; then
+	epatch "${FILESDIR}/${P}-launcher.patch"
+	fi
 	make clean
 }
 
