@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/falkTX/Carla.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="qt4 alsa opengl pulseaudio X fluidsynth linuxsampler projectm"
+IUSE="qt4 alsa opengl pulseaudio X fluidsynth linuxsampler projectm osc"
 
 RDEPEND="qt4? ( dev-python/PyQt4
                 dev-qt/qtgui )
@@ -22,7 +22,8 @@ RDEPEND="qt4? ( dev-python/PyQt4
 		 X? ( x11-libs/libX11 )
 		 fluidsynth? ( media-sound/fluidsynth )
 		 linuxsampler? ( media-sound/linuxsampler )
-		 projectm? ( media-libs/libprojectm )"
+		 projectm? ( media-libs/libprojectm )
+		 osc? ( media-libs/liblo )"
 DEPEND="${RDEPEND}"
 
 src_prepare() {
