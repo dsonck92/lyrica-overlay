@@ -28,7 +28,7 @@ DEPEND="dev-qt/qtgui:5
 
 src_prepare() {
 #    epatch "${FILESDIR}/${P}-destdir.patch"
-	QT_SELECT=5 qmake TouHouFM.pro PREFIX=/usr
+	QT_SELECT=5 qmake TouHouFM.pro PREFIX=/usr QMAKE_CXXFLAGS="${CXXFLAGS}" QMAKE_STRIP=echo
 }
 
 src_compile() {
