@@ -48,15 +48,14 @@ DEPEND="dev-python/PyQt4
 # TODO: Handle compile dependencies correctly
 
 src_prepare() {
-    epatch "${FILESDIR}/${P}-destdir.patch"
 	make clean
 }
 
 src_compile() {
-	make 
+	make PREFIX="/usr"
 
 }
 src_install() {
-    emake DESTDIR="${D}" install
+    emake PREFIX="/usr" DESTDIR="${D}" install
 }
 
