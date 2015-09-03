@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/dsonck92/touhoufm.git"
 EGIT_COMMIT="v${PV}"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="x86 amd64"
 IUSE=""
 
 RDEPEND="dev-qt/qtgui:5
