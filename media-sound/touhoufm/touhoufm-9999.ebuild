@@ -15,7 +15,7 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="dev-qt/qtgui:5
-         dev-qt/qtmultimedia:5
+         dev-qt/qtmultimedia:5[gstreamer010]
 		 dev-qt/qtwebsockets:5
 		 dev-qt/qtsvg:5
 		 media-plugins/gst-plugins-meta:0.10[mp3,http]"
