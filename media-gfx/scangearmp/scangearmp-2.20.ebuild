@@ -37,7 +37,7 @@ IUSE="amd64
 	mg6500
 	mg7100
 	p200" 
-DEPEND=">=dev-libs/libusb-0.1.12-r5 
+DEPEND="virtual/libusb:0 
     >=media-libs/libpng-1.2.44 
     >=media-gfx/gimp-2.6.8 
     >=x11-libs/gtk+-2.20.1-r1 
