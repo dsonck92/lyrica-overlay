@@ -38,5 +38,5 @@ DEPEND="${RDEPEND}
 #DOCS=( AUTHORS NEWS README )
 
 src_install() {
-	cp -R "${S}/" "${D}/" || die "Install failed!"
+	cp -R "${S}/." "${D}/" || die "Install failed!"
 }
