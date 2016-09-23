@@ -12,7 +12,7 @@ DESCRIPTION="LADI Session Handler - a session management system for JACK applica
 HOMEPAGE="http://ladish.org/"
 #EGIT_REPO_URI="git://repo.or.cz/${PN}.git"
 
-SRC_URI="http://dist.sonck.nl/gentoo/media-sound/ladish/ladish-9999-r1.tbz2"
+SRC_URI="http://dist.sonck.nl/gentoo/media-sound/ladish/ladish-9999.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -36,13 +36,6 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
 #DOCS=( AUTHORS NEWS README )
-
-src_unpack() {
-	mkdir ladish-9999
-	cd ladish-9999
-
-	unpack ${A}
-}
 
 src_install() {
 	cp -R "${S}/" "${D}/" || die "Install failed!"
